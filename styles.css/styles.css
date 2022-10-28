@@ -1,0 +1,314 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+header img{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 20px;
+}
+.nombre{
+    display: flex;
+    color: #598B2C;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    width: 20%;
+    align-items: center;
+    margin-left: -3%;
+}
+nav a:hover{
+    color: #294411;
+}
+.h1-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.biblio h2{
+    display: flex;
+    color: #598B2C;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
+    margin: 3%;
+}
+.libros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3%;
+}
+.book{
+    margin: 1%;
+    padding: 0.5%;
+    border: 2.2px solid #294411;
+}
+.h1-movies{
+    display: flex;
+    color: #598B2C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 1% 12% 4% 2%;
+    justify-content: right;
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.peli{
+    display: flex;
+    padding: 0.1%;
+    margin: 1%;
+    border: 2.6px solid #294411;
+}
+body{
+    font-family: Inter Tight;
+}
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-img{
+    display: flex;
+}
+nav ul li a{
+     font-family: Poppins;
+    color:#598B2C;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight:bold;
+    text-transform: uppercase;
+    /* background-color: #C3DAC3;
+    border: 2px solid #598B2C; */
+    border-radius: 20%; 
+}
+nav ul{
+    background-color: #C3DAC3;
+    border: 2px solid #598B2C;
+    padding: 20px 40px;
+}
+nav ul li{
+    display: inline-block;
+}
+.img{
+    box-shadow: rgba(0,0,0,0.8) 0 0 15px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 1.5%;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.p-index{
+    display: flex;
+    margin: 0.6%;
+}
+footer{
+    background-color: #598B2C;
+    text-align: right;
+    overflow: hidden;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+.container-p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.p{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 24px;
+}
+.pages{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+footer h3{
+    text-decoration: underline;
+}
+footer ul li a{
+    color: #C3DAC3;
+}
+.redes a{
+    color:#C3DAC3;
+    font-size: 60px;
+    margin: 20px;
+}
+.cruelty{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.crueltytitle{
+    color: #598B2C;
+    text-align: center;
+    width: 40%;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.marcas{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(8,100px);
+    grid-template-rows: repeat(2,100px);
+}
+.recetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3%;
+    width: 90%;
+}
+.h1recetas{
+    display: flex;
+    color: #598B2C;
+    justify-content: right;
+    margin: 0 13% 5% 0;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+.frase{
+    color: #345830;
+    position: relative;
+    font-family: Cookie;
+    margin: 4%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    line-height: 30px;
+}
+.recetas-frase{
+    display: flex;
+}
+.recetas h2{
+    margin: 5% 0 3% 0;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #598B2C;
+    font-family: Poppins;
+    font-weight: bold;
+}
+.sumate{
+    color: #598B2C;
+    text-align: center;
+    position: relative;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin: 4% 4% 1% 4%;
+}
+.info{
+    color: #345830;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    font-size: 1.1rem;
+    margin: 1%;
+}
+form h2{
+    color: #598B2C;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.formcontainer{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-flow: column;
+    background-color: #C3DAC3;
+    width: 40%;
+    height: 80%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.8) 0 0 50px;
+    border-radius: 10px;
+}
+input{
+    background-color: #C3DAC3;
+    font-family: Heebo;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+textarea{
+    background-color: #C3DAC3;
+    font-family: Heebo;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+input:focus, textarea:focus{
+    border-bottom-color: #345830;
+}
+button{
+    font-family: Inter Tight;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #C3DAC3;
+    border: 2px solid #598B2C;
+    padding: 10px;
+    width: 200px;
+    color: #598B2C;
+    box-shadow: rgba(0,0,0,0.8) 0 0 2px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+/*font-family: 'Heebo', sans-serif;
+font-family: 'Inter Tight', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Satisfy', cursive;
