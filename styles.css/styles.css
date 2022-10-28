@@ -6,6 +6,13 @@
 	border: none;
 	outline: none;
 }
+@media (max-width: 700px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
 header img{
     position: relative;
     margin-top: 50px;
@@ -174,10 +181,14 @@ footer ul li a{
     text-transform: uppercase;
 }
 .marcas{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    grid-template-columns: repeat(8,100px);
-    grid-template-rows: repeat(2,100px);
+    margin-top: 4%;
+}
+.marcas img{
+    margin: 1%;
+    padding: 1%;
 }
 .recetas{
     display: flex;
