@@ -1,0 +1,567 @@
+header .container-header {
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 100%;
+}
+header .header-img {
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  margin-bottom: 28px;
+  margin-top: 14px;
+}
+header .div-nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 44px;
+  transition: all 0.2s;
+}
+header nav ul li a {
+  font-family: Poppins, sans-serif;
+  color: #598B2C;
+  text-transform: uppercase;
+}
+header nav a:hover {
+  color: #1e300f;
+}
+
+footer .footer {
+  background-color: #598B2C;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: Inter, sans-serif;
+}
+footer .freedom {
+  color: rgb(245, 245, 245);
+  display: flex;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+}
+footer .pages {
+  color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 5px;
+}
+footer .pages h3 {
+  padding: 10px;
+}
+footer .pages a {
+  color: #d2e9be;
+}
+footer .redes {
+  margin: 10px;
+  justify-content: flex-end;
+}
+footer .redes a i {
+  color: rgb(245, 245, 245);
+  font-size: 50px;
+  padding: 10px;
+  bottom: 20px;
+  transition: all 0.2s;
+}
+footer .pages a:hover {
+  color: #1e300f;
+  transform: scale(1.2);
+}
+footer a i:hover {
+  color: #1e300f;
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+@media (min-width: 720px) {
+  body nav ul {
+    flex-direction: row;
+  }
+  body .container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .header-img {
+    height: 150px;
+    margin-left: 20px;
+  }
+  body nav ul li a {
+    padding: 18px;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  body #hero h1 {
+    font-size: 10rem;
+    font-weight: 200;
+  }
+  body .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .pages h3 {
+    margin-top: -10px;
+  }
+  body main h2 {
+    font-size: 2.4rem;
+  }
+  body main p, body .p-test, body .p-circo {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  body .div-movies, body .libros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body .peli {
+    padding-bottom: 40px;
+  }
+  body .movies h1, body .biblio h2 {
+    font-size: 4.6rem;
+    padding: 20px;
+  }
+  body .book {
+    padding: 30px;
+  }
+  body .pic-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .piggy {
+    width: 45vw;
+    height: 65vh;
+  }
+  body .formcontainer {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  body .formcontainer form {
+    background-color: #C3DAC3;
+    width: 45%;
+    height: 90%;
+    padding: 20px;
+  }
+  body .formcontainer input {
+    font-size: 1rem;
+    width: 100%;
+  }
+  body .formcontainer textarea {
+    font-size: 1rem;
+    width: 100%;
+  }
+  body .formcontainer button {
+    font-size: 1.4rem;
+  }
+  body .sumate h1 {
+    font-size: 6rem;
+  }
+  body .info h3 {
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 20px;
+    margin: 10px;
+  }
+  body .h1recetas h1 {
+    font-size: 6.8rem;
+  }
+  body .recetas {
+    justify-content: space-around;
+  }
+  body .recetas img {
+    height: 420px;
+  }
+  body .recetas h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  body .recetas-frase {
+    padding-bottom: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  body .recetas-frase h3 {
+    font-size: 4.4rem;
+    line-height: 50px;
+    font-weight: 300;
+  }
+  body .cruelty {
+    margin: 20px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .cruelty .crueltytitle h1 {
+    font-size: 6.2rem;
+  }
+  body .cruelty .crueltyimg img {
+    height: 600px;
+  }
+  body .marcas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  body .marcas img {
+    width: 200px;
+  }
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/santuario.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+  line-height: 24px;
+}
+main h2 {
+  color: #598B2C;
+  display: flex;
+  font-family: Cookie;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 10px 0 20px 0;
+}
+main p {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+}
+
+.jaulas {
+  display: flex;
+  flex-direction: column;
+}
+.jaulas .elefante {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/elefantes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.jaulas p {
+  margin: 15px;
+  padding: 10px;
+  line-height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+}
+
+.testeo {
+  display: flex;
+  flex-direction: column;
+}
+.testeo .labrat {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/rata.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.testeo p {
+  margin: 15px;
+  padding: 10px;
+  line-height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+}
+
+.pig {
+  width: 100%;
+}
+
+.piggy {
+  height: 50vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/audiovisual/babe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movies img {
+  display: flex;
+  height: 60vh;
+}
+
+.movies h1 {
+  margin: 20px;
+  text-align: center;
+  color: #598B2C;
+  font-family: Cookie, sans-serif;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.div-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.peli {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.libros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.biblio h2 {
+  margin: 20px;
+  text-align: center;
+  color: #598B2C;
+  font-family: Cookie, sans-serif;
+  font-size: 4rem;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+.book {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.h1recetas {
+  display: flex;
+  color: #598B2C;
+  justify-content: center;
+  margin: 15px;
+  padding: 15px;
+  font-family: Cookie, sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+.recetas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  width: 90%;
+}
+.recetas img {
+  height: 200px;
+}
+.recetas h2 {
+  font-family: Poppins;
+  font-size: 1.4rem;
+  color: #345830;
+  text-align: center;
+  padding: 20px;
+}
+.recetas .receta {
+  padding: 10px;
+}
+
+.recetas-frase {
+  display: flex;
+}
+.recetas-frase h3 {
+  color: #345830;
+  font-family: Cookie;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.8rem;
+  line-height: 40px;
+}
+
+.cruelty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cruelty .crueltytitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cruelty .crueltytitle h1 {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #598B2C;
+  font-family: Cookie, sans-serif;
+  font-size: 3.5rem;
+}
+.cruelty .crueltyimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.cruelty .crueltyimg img {
+  height: 260px;
+}
+
+.marcas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marcas img {
+  width: 220px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.sumate h1 {
+  color: #598B2C;
+  text-align: center;
+  font-family: Cookie, sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.info h3 {
+  display: flex;
+  color: #345830;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.formcontainer {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formcontainer .completa {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.formcontainer h2 {
+  color: #598B2C;
+  padding-bottom: 10px;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.formcontainer form {
+  display: flex;
+  flex-flow: column;
+  background-color: #C3DAC3;
+  width: 80%;
+  margin: 0 20px 60px 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 50px;
+  border-radius: 10px;
+}
+.formcontainer input {
+  display: flex;
+  background-color: #C3DAC3;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 15px 0px;
+  text-align: center;
+  width: 80%;
+  margin: 20px;
+  transition: all 300ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.formcontainer input:focus {
+  border-bottom-color: #345830;
+}
+.formcontainer textarea {
+  background-color: #C3DAC3;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 15px 0px;
+  text-align: center;
+  width: 80%;
+  margin: 20px;
+  transition: all 300ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.formcontainer textarea:focus {
+  border-bottom-color: #345830;
+}
+.formcontainer button {
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #C3DAC3;
+  border: 2px solid #598B2C;
+  padding: 10px;
+  width: 60%;
+  color: #598B2C;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 2px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

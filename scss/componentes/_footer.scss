@@ -1,0 +1,49 @@
+footer{
+    .footer{
+        background-color: #598B2C;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: 10px;
+        font-family: Inter, sans-serif;
+    }
+    .freedom{
+        color: rgb(245, 245, 245);
+        display: flex;
+        padding: 20px 0 10px 0;
+        font-weight: bold;
+    }
+    .pages{
+        color: rgb(245, 245, 245);
+        text-align: center;
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 5px;
+    }
+    .pages h3{
+        padding: 10px;
+    }
+    .pages a{
+        color: #d2e9be;
+    }
+    .redes{
+        margin: 10px;
+        justify-content: flex-end;
+    }
+    .redes a i{
+        color: rgb(245, 245, 245);
+        font-size: 50px;
+        padding: 10px;
+        bottom: 20px;
+        transition: all 0.2s;
+    }
+    .pages a:hover{
+        color: #1e300f;
+        transform: scale(1.2);
+    }
+    a i:hover{
+        color: #1e300f;
+        transform: scale(1.2);
+    }
+}

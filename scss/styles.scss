@@ -1,0 +1,496 @@
+@import './componentes/header';
+@import './componentes/footer';
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    box-sizing: border-box;
+}
+body{
+   font-family: Roboto, sans-serif;
+   background-color: rgb(245, 245, 245);
+   @media (min-width:720px){
+    nav ul{
+        flex-direction: row;
+    }
+    .container-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-img{
+        height: 150px;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        padding: 18px;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    #hero h1{
+        font-size: 10rem;
+        font-weight: 200;
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pages h3{
+        margin-top: -10px;
+    }
+    main h2{
+        font-size: 2.4rem;
+    }
+    main p, .p-test, .p-circo{
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+    .div-movies, .libros{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .peli{
+        padding-bottom: 40px;
+    }
+    .movies h1, .biblio h2{
+        font-size: 4.6rem;
+        padding: 20px;
+    }
+    .book{
+        padding: 30px;
+    }
+    .pic-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .piggy{
+        width: 45vw;
+        height: 65vh;
+    }
+    .formcontainer{
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        form{
+            background-color: #C3DAC3;
+            width: 45%;
+            height: 90%;
+            padding: 20px;
+        }
+        input{
+            font-size: 1rem;
+            width: 100%;
+        }
+        textarea{
+            font-size: 1rem;
+            width: 100%;
+        }
+        button{
+            font-size: 1.4rem;
+        }  
+    }
+    .sumate{
+            h1{
+                font-size: 6rem;
+            }
+        }
+    .info{
+        h3{
+            justify-content: center;
+            font-size: 1.3rem;
+            padding: 20px;
+            margin: 10px;
+        }
+    }
+    .h1recetas{
+        h1{
+            font-size: 6.8rem;
+        }
+    }
+    .recetas{
+        justify-content: space-around;
+        img{
+            height: 420px;
+        }
+        h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+    .recetas-frase{
+        padding-bottom: 20px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        h3{
+            font-size: 4.4rem;
+            line-height: 50px;
+            font-weight: 300;
+        }
+    }
+    .cruelty{
+        margin: 20px;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        .crueltytitle{
+            h1{
+                font-size: 6.2rem;
+            }
+        }
+        .crueltyimg{
+            img{
+                height: 600px;
+            }
+        }
+    }
+    .marcas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-evenly;
+        img{
+            width: 200px;
+        }
+    }
+
+}
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(../img/santuario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 15px;
+        padding: 10px;
+        line-height: 24px;
+    h2{
+        color: #598B2C;
+        display: flex;
+        font-family: Cookie;
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 10px 0 20px 0;
+    }
+    p{
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+    }
+}
+.jaulas{
+    display: flex;
+    flex-direction: column;
+    .elefante{
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.3),
+           rgba(0, 0, 0, 0.3)
+        )
+        ,url(../img/elefantes.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    p{
+        margin: 15px;
+        padding: 10px;
+        line-height: 24px;
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+    }
+}
+.testeo{
+    display: flex;
+    flex-direction: column;
+    .labrat{
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        )
+        ,url(../img/rata.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    p{
+        margin: 15px;
+        padding: 10px;
+        line-height: 24px;
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+    }
+}
+.pig{
+    width: 100%;
+}
+.piggy{
+    height: 50vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    )
+    ,url(../img/audiovisual/babe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.movies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.movies img{
+    display: flex;
+    height: 60vh;
+}
+.movies h1{
+    margin: 20px;
+    text-align: center;
+    color: #598B2C;
+    font-family: Cookie, sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+}
+.div-movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.peli{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.libros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.biblio h2{
+    margin: 20px;
+    text-align: center;
+    color: #598B2C;
+    font-family: Cookie, sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+.book{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.h1recetas{
+    display: flex;
+    color: #598B2C;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+    font-family: Cookie, sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+.recetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    width: 90%;
+    img{
+        height: 200px;
+    }
+    h2{
+        font-family: Poppins;
+        font-size: 1.4rem;
+        color: #345830;
+        text-align: center;
+        padding: 20px;
+    }
+    .receta{
+        padding: 10px;
+    }
+}
+.recetas-frase{
+    display: flex;
+    h3{
+        color: #345830;
+        font-family: Cookie;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2.8rem;
+        line-height: 40px;
+    }
+}
+.cruelty{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .crueltytitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            color: #598B2C;
+            font-family: Cookie, sans-serif;
+            font-size: 3.5rem;
+        }
+    }
+    .crueltyimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        img{
+            height: 260px;
+        }
+    }
+}
+.marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 220px;
+        margin: 20px;
+        padding: 10px;
+    }
+}
+.sumate{
+    h1{
+        color: #598B2C;
+        text-align: center;
+        font-family: Cookie, sans-serif;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+}
+.info{
+    h3{
+        display: flex;
+        color: #345830;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
+.formcontainer{
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .completa{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    h2{
+        color: #598B2C;
+        padding-bottom: 10px;
+        margin: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    form{
+        display: flex;
+        flex-flow: column;
+        background-color: #C3DAC3;
+        width: 80%;
+        margin: 0 20px 60px 20px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0,0,0,0.8) 0 0 50px;
+        border-radius: 10px;
+    }
+    input{
+        display: flex;
+        background-color: #C3DAC3;
+        font-family: Poppins, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: none;
+        resize: none;
+        outline: none;
+        padding: 15px 0px;
+        text-align: center;
+        width: 80%;
+        margin: 20px;
+        transition: all 300ms;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+            &:focus{
+                border-bottom-color: #345830;
+            }
+    }
+    textarea{
+        background-color: #C3DAC3;
+        font-family: Poppins, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: none;
+        resize: none;
+        outline: none;
+        padding: 15px 0px;
+        text-align: center;
+        width: 80%;
+        margin: 20px;
+        transition: all 300ms;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+            &:focus{
+                border-bottom-color: #345830;
+            }
+    }
+    button{
+        font-family: Roboto, sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        background-color: #C3DAC3;
+        border: 2px solid #598B2C;
+        padding: 10px;
+        width: 60%;
+        color: #598B2C;
+        box-shadow: rgba(0,0,0,0.8) 0 0 2px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+}
