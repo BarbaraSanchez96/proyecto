@@ -256,7 +256,7 @@ main {
   padding: 10px;
   line-height: 24px;
 }
-main h2 {
+main h1 {
   color: #598B2C;
   display: flex;
   font-family: Cookie;
@@ -289,6 +289,14 @@ main p {
   font-family: Poppins, sans-serif;
   font-weight: 300;
 }
+.jaulas h2 {
+  color: #598B2C;
+  display: flex;
+  font-family: Cookie, sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 20px 0 0 24px;
+}
 
 .testeo {
   display: flex;
@@ -304,11 +312,19 @@ main p {
   background-position: center center;
 }
 .testeo p {
-  margin: 15px;
+  margin: 10px;
   padding: 10px;
   line-height: 24px;
   font-family: Poppins, sans-serif;
   font-weight: 300;
+}
+.testeo h2 {
+  color: #598B2C;
+  display: flex;
+  font-family: Cookie, sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 20px 0 0 24px;
 }
 
 .pig {
